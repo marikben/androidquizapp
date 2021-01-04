@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KyselyApp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:id="@+id/text_view_question_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Kuinka virkeä olet?"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/vastaus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text=""
+        android:textColor="@android:color/holo_green_dark" />
+
+    <Button
+        android:id="@+id/edellinen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edellinen"
+        android:layout_alignParentBottom="true"/>
+
+
+
+        <Button
+            android:id="@+id/vasynyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="Väsynyt"/>
+        <Button
+            android:id="@+id/normaali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Normaali"
+           />
+        <Button
+            android:id="@+id/virkea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:text="Virkeä"
+           />
+
+
+
+</RelativeLayout>
