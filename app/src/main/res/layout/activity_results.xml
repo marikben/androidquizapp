@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcedc2"
+    tools:context=".ResultsActivity">
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <ListView
+        android:id="@+id/paatos"
+        android:text=""
+        android:textColor="#ff8c94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        <Button
+            android:id="@+id/random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="470dp"
+            android:layout_marginLeft="70dp"
+            android:background="#ffd3b5"
+            android:textColor="#ff8c94"
+            android:text="Randomoi"/>
+    <Button
+    android:id="@+id/alkuun"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="470dp"
+    android:layout_marginLeft="250dp"
+        android:background="#ff8c94"
+        android:textColor="#ffd3b5"
+    android:text="Aloita alusta"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
