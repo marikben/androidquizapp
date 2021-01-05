@@ -77,7 +77,7 @@ public class DBAccess {
         return buffer.toString();
     }
     public String getName5(String vireys){
-        c=db.rawQuery("select nimi from AskartelujaKäsityot WHERE Vireys= '"+vireys+"'", new String[]{});
+        c=db.rawQuery("select nimi from AskartelujaKäsityöt WHERE Vireys= '"+vireys+"'", new String[]{});
         StringBuffer buffer = new StringBuffer();
         while(c.moveToNext()){
             String nimi = c.getString(0);
