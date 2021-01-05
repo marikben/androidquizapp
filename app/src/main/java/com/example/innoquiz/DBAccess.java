@@ -49,7 +49,7 @@ public class DBAccess {
     }
 
     public String getName2(String vireys, String paikka){
-        c=db.rawQuery("select nimi from KulttuurijaElämykset WHERE Vireys= '"+vireys+"' AND SisallaUlkona= "+paikka, new String[]{});
+        c=db.rawQuery("select Nimi from KulttuurijaElämykset WHERE Vireys= '"+vireys+"' AND SisallaUlkona= "+paikka, new String[]{});
         StringBuffer buffer = new StringBuffer();
         while(c.moveToNext()){
             String nimi = c.getString(0);
@@ -59,7 +59,7 @@ public class DBAccess {
     }
 
     public String getName3(String vireys){
-        c=db.rawQuery("select nimi from Pelaaminen WHERE Vireys= '"+vireys+"'", new String[]{});
+        c=db.rawQuery("select Nimi from Pelaaminen WHERE Vireys= '"+vireys+"'", new String[]{});
         StringBuffer buffer = new StringBuffer();
         while(c.moveToNext()){
             String nimi = c.getString(0);
@@ -68,7 +68,7 @@ public class DBAccess {
         return buffer.toString();
     }
     public String getName4(String vireys){
-        c=db.rawQuery("select nimi from RuokajaRuoanlaitto WHERE Vireys= '"+vireys+"'", new String[]{});
+        c=db.rawQuery("select Nimi from RuokajaRuoanlaitto WHERE Vireys= '"+vireys+"'", new String[]{});
         StringBuffer buffer = new StringBuffer();
         while(c.moveToNext()){
             String nimi = c.getString(0);
@@ -77,7 +77,7 @@ public class DBAccess {
         return buffer.toString();
     }
     public String getName5(String vireys){
-        c=db.rawQuery("select nimi from AskartelujaKäsityöt WHERE Vireys= '"+vireys+"'", new String[]{});
+        c=db.rawQuery("select Nimi from AskartelujaKäsityot WHERE Vireys= '"+vireys+"'", new String[]{});
         StringBuffer buffer = new StringBuffer();
         while(c.moveToNext()){
             String nimi = c.getString(0);
@@ -86,7 +86,7 @@ public class DBAccess {
         return buffer.toString();
     }
     public String getName6(String maksu){
-        c=db.rawQuery("select nimi from Elokuvat where Maksullinen ='"+maksu+"' union select nimi from sarjat union select nimi from KirjatjaLehdet", new String[]{});
+        c=db.rawQuery("select Nimi from Elokuvat where Maksullinen ='"+maksu+"' union select Nimi from Sarjat union select Nimi from KirjatjaLehdet", new String[]{});
         StringBuffer buffer = new StringBuffer();
         while(c.moveToNext()){
             String nimi = c.getString(0);
