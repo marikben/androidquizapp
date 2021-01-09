@@ -16,7 +16,7 @@ private Button aloitus;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         aloitus =(Button)findViewById(R.id.aloita);
-        //tähän ehkä activity()
+        
         aloitus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
