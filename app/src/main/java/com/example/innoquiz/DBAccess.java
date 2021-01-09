@@ -29,7 +29,7 @@ public class DBAccess {
     }
 
     public void open(){
-        this.db= openHelper.getWritableDatabase(); //kato jos myöhemmin vaihdat readable
+        this.db= openHelper.getWritableDatabase(); 
     }
 
     public void close(){
